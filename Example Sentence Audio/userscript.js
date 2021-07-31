@@ -14,7 +14,7 @@
 	// Need to remove the referrer; otherwise returns 404s
 	var remRef = document.createElement('meta');
 	remRef.name = 'referrer';
-	remRef.content = 'no-referrer';
+	remRef.content = 'same-origin';
 	document.querySelector('head').append(remRef);
 
 	// CSS stuff
